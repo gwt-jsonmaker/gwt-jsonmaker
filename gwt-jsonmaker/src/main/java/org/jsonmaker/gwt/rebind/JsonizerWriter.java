@@ -184,15 +184,9 @@ public class JsonizerWriter {
 	
 	private String ensureJsonizer(JClassType beanClass){
 		String simpleName = RebindUtils.jsonizerSimpleName(beanClass);
-		
-		JClassType jsonizer = ctx.getTypeOracle().findType(beanClass.getPackage().getName(), simpleName);
-		JClassType nestedJsonizer = ctx.getTypeOracle().findType(beanClass.getPackage().getName(), beanClass.getSimpleSourceName() + "." + simpleName);
-		if(jsonizer != null)
-			return jsonizer.getName();
-		else if (nestedJsonizer != null)
-			return nestedJsonizer.getName();
-		else {
-			PrintWriter writer = ctx.tryCreate(logger, beanClass.getPackage().getName(), simpleName);
+				
+		PrintWriter writer = ctx.tryCreate(logger, beanClass.getPackage().getName(), simpleName);
+		if(writer!=null){
 			ClassSourceFileComposerFactory composerFactory = new ClassSourceFileComposerFactory(
 				beanClass.getPackage().getName(), simpleName);
 			
@@ -201,8 +195,10 @@ public class JsonizerWriter {
 			composerFactory.addImplementedInterface(Constants.JSONIZER_INTERFACE);
 
 			composerFactory.createSourceWriter(ctx, writer).commit(logger);
-			return beanClass.getPackage().getName() + "." + simpleName;
 		}
+		
+		return beanClass.getPackage().getName() + "." + simpleName;
+		
 	}
 	
 	private String parametrizedJsonizerExp(JParameterizedType paramType) 
@@ -210,7 +206,7 @@ public class JsonizerWriter {
 	{
 		
 		Object jsonizerClass = Constants.PARAMETRIZED_JSONIZERS.get(
-				paramType.getNonParameterizedQualifiedSourceName());
+				paramType.getQualifiedSourceName());
 		if(jsonizerClass == null){
 			logger.log(TreeLogger.ERROR, "Parametrized type '" + 
 					paramType.getQualifiedSourceName() + "' is not supported", null);
