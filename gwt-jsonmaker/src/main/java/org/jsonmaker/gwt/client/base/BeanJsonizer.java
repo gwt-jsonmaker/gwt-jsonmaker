@@ -31,6 +31,7 @@ import com.google.gwt.core.client.JavaScriptObject;
  * Credited to Andrés Adolfo Testi
  *
  */
+@SuppressWarnings("rawtypes") 
 public abstract class BeanJsonizer implements Jsonizer {
 	
 	public BeanJsonizer(){

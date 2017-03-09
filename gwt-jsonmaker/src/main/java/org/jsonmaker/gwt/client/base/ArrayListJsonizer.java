@@ -37,7 +37,8 @@ public class ArrayListJsonizer extends CollectionJsonizer{
 	public ArrayListJsonizer(Jsonizer elemJsonizer) {
 		super(elemJsonizer);
 	}
-
+ 
+	@SuppressWarnings("rawtypes")
 	protected Collection createCollection() {
 		return new ArrayList();
 	}

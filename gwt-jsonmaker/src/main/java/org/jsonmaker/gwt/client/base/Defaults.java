@@ -73,6 +73,9 @@ public class Defaults {
 		return (int)asPrimitiveLong(jsValue);
 	}
 	public static String asPrimitiveString(String jsValue)throws JsonizerException{
+            if (jsValue != null ){
+                jsValue = ""+jsValue;
+            }
 		return jsValue;
 	}
 
@@ -131,8 +134,9 @@ public class Defaults {
 	};
 	
 	private static final native String translateString(JavaScriptObject jsValue)/*-{
-		if(jsValue instanceof String || ((typeof jsValue)=='String'))
-			return jsValue;
+		if(jsValue instanceof String || ((typeof jsValue)=='String')||((typeof jsValue)=='string') ){
+                    return ""+jsValue;
+                }
 		@org.jsonmaker.gwt.client.base.Defaults::throwJsonizerException()();
 	}-*/;
 	
