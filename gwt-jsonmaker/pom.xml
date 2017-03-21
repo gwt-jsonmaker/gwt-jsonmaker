@@ -4,6 +4,18 @@
     <artifactId>gwt-jsonmaker</artifactId>
     <version>1.3.0</version>
     <name>gwt-jsonmaker</name>
+    <url>https://github.com/gwt-jsonmaker/gwt-jsonmaker</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+         </license>
+    </licenses>
+    <scm><url>https://github.com/gwt-jsonmaker/gwt-jsonmaker</url></scm>
+    <description>
+        jsonmaker provides an interface to serialize POJOs to JSON and vice-versa gwt-jsonmaker is derived from gwt-jsonizer(http://code.google.com/p/gwt-jsonizer).
+        Please also visit https://code.google.com/archive/p/gwt-jsonmaker/ for more information.
+    </description>
     <dependencies>
 
         <dependency>
@@ -71,4 +83,14 @@
             <id>dev</id>
         </profile>
     </profiles>
+    <developers>
+        <developer>
+            <name>Zhong H Huang</name>
+            <email>zhonghonghuang@gmail.com</email>
+        </developer>
+        <developer>
+            <name>Gaurav Saxena</name>
+            <email>gsaxena81@gmail.com</email> 
+        </developer>        
+    </developers>
 </project>
