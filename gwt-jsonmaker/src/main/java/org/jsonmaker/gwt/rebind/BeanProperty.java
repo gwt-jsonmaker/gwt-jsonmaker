@@ -27,7 +27,7 @@ import com.google.gwt.core.ext.typeinfo.JType;
 
 /**
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt; 
  * Credited to Andrés Adolfo Testi
  *
  */

@@ -21,8 +21,8 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * A singleton class, that parses a string with JSON format and evaluates it. 
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com>
- * @author Stefan Asseg <stefan.asseg@gmail.com>
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt;
+ * @author Stefan Asseg &lt;stefan.asseg@gmail.com&gt;
  * Credited to Andrés Adolfo Testi
  *
  */
@@ -55,11 +55,8 @@ public final class JsonizerParser {
 	}
 	
 	public static native JavaScriptObject evaluate(String jsonString) /*-{
-		var x = eval('(' + jsonString + ')');
-	 	if (typeof x == 'number' || typeof x == 'string' || typeof x == 'array' || typeof x == 'boolean') {
-	 		x = (Object(x));
-	 	}
-	 	return x;
+              return JSON.parse(jsonString);
+
 	}-*/;
 	
 }

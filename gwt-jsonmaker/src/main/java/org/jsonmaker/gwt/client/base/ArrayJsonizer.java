@@ -25,7 +25,7 @@ import com.google.gwt.core.client.JavaScriptObject;
  * implement the createArray method, to avoid ClassCastExceptions
  * in hosted mode. 
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt;
  * Credited to Andrés Adolfo Testi
  *
  */

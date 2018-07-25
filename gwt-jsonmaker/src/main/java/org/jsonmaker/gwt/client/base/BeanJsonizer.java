@@ -27,7 +27,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * Used internally by the Jsonizer API.
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt; 
  * Credited to Andrés Adolfo Testi
  *
  */

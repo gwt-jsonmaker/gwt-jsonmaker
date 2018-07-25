@@ -31,7 +31,7 @@ import com.google.gwt.user.rebind.SourceWriter;
 
 /**
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt; 
  * Credited to Andrés Adolfo Testi
  *
  */

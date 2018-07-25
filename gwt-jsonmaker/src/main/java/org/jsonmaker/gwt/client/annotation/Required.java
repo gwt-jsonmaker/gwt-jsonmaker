@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 import org.jsonmaker.gwt.client.JsonizerException;
 
 /**
- * @author Stefan Asseg <stefan.asseg@gmail.com>
+ * @author Stefan Asseg &lt;stefan.asseg@gmail.com&gt;
  * Marker interface which is used to notify that a property is required in json while desrialization.
  * If the annotated property is not found, gwt-jsonmaker throws {@link JsonizerException}  
  * This is applied on getters

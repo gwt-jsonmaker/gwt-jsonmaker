@@ -16,7 +16,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * @author Stefan Asseg <stefan.asseg@gmail.com>
+ * @author Stefan Asseg &lt;stefan.asseg@gmail.com&gt;
  * Marker interface which is used to notify that the annotated field need not be serialized.
  * This is applied on getters
  */

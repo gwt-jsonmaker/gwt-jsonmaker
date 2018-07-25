@@ -27,7 +27,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * Translates objects of class java.util.HashMap.
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt; 
  * Credited to Andrés Adolfo Testi
  *
  */
@@ -38,7 +38,8 @@ public class HashMapJsonizer implements Jsonizer{
 	
 	/**
 	 * Constructs a new HashMapJsonizer.
-	 * @param elemJsonizer Jsonizer for inner type.
+	 * @param keyJsonizer Jsonizer for inner type.
+         * @param valueJsonizer Jsonizer for inner type.
 	 */
 	public HashMapJsonizer(Jsonizer keyJsonizer, Jsonizer valueJsonizer){
 		this.keyJsonizer = keyJsonizer;

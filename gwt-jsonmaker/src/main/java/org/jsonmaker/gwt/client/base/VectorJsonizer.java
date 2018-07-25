@@ -23,7 +23,7 @@ import org.jsonmaker.gwt.client.Jsonizer;
 /**
  * Jsonizer for object of class java.util.Vector.
  * 
- * @author Gaurav Saxena<gsaxena81@gmail.com> 
+ * @author Gaurav Saxena&lt;gsaxena81@gmail.com&gt; 
  * Credited to Andrés Adolfo Testi
  *
  */

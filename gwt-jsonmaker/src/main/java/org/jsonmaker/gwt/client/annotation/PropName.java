@@ -16,7 +16,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 /**
- * @author Stefan Asseg <stefan.asseg@gmail.com>
+ * @author Stefan Asseg &lt;stefan.asseg@gmail.com&gt;
  * Used to provide alias for default property name during serialization.
  * This is applied on getters
  */

@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 import org.jsonmaker.gwt.client.JsonizerException;
 
 /**
- * @author Stefan Asseg <stefan.asseg@gmail.com>
+ * @author Stefan Asseg &lt;stefan.asseg@gmail.com&gt;
  * Marker interface which is used to notify that the field cannot be null during serialization. gwt-jsonmaker
  * throws {@link JsonizerException} if this field is found null.
  * This is applied on getters
